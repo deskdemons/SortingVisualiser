@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <div class="h-screen bg-gray-900 flex flex-col">
+            <nav
+                class="relative w-full flex flex-wrap items-center justify-between py-4 bg-indigo-900 text-white shadow-lg">
+                <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+                    <div class="container-fluid">
+                        <span class="font-medium">Data Structures and Algorithms Project [Team DeskDemons]</span>
+                    </div>
+                </div>
+            </nav>
+            <div class='flex flex-row h-full'>
+                <div class="w-full h-full bg-gray-900">
+
+                    <div id="sorting" class="mt-auto pl-5 pt-5 pb-10">
+
+                    </div>
+                </div>
+
+
+                <div class="bg-gray-700 rounded-lg h-full w-4/12">
+                    <div class="m-5">
+                        <div class="w-full space-y-5 mt-5">
+                            <div class="flex flex-col">
+                                <div class="mx-auto space-y-2">
+                                    <div>
+                                        <button type="button"
+                                            class="disabled:opacity-75 py-2 px-4 w-40 bg-transparent text-white font-semibold border border-white rounded hover:bg-red-600 hover:text-white hover:border-white transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 bubbleSort">Bubble
+                                            Sort</button>
+                                    </div>
+                                    <div>
+                                        <button type="button"
+                                            class="disabled:opacity-75 py-2 px-4 w-40 bg-transparent text-white font-semibold border border-white rounded hover:bg-red-600 hover:text-white hover:border-white transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 mergeSort">Merge
+                                            Sort</button>
+                                    </div>
+                                    <div>
+                                        <button type="button"
+                                            class="disabled:opacity-75 py-2 px-4 w-40 bg-transparent text-white font-semibold border border-white rounded hover:bg-red-600 hover:text-white hover:border-white transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 selectionSort">Selection
+                                            Sort</button>
+                                    </div>
+                                    <div>
+                                        <button type="button"
+                                            class="disabled:opacity-75 py-2 px-4 w-40 bg-transparent text-white font-semibold border border-white rounded hover:bg-red-600 hover:text-white hover:border-white transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 quickSort">Quick
+                                            Sort</button>
+                                    </div>
+                                    <div>
+                                        <button type="button"
+                                            class="disabled:opacity-75 py-2 px-4 w-40 bg-transparent text-white font-semibold border border-white rounded hover:bg-red-600 hover:text-white hover:border-white transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 insertionSort">Insertion
+                                            Sort</button>
+                                    </div>
+                                    <div>
+                                        <button type="button"
+                                            class="disabled:opacity-75 py-2 px-4 w-40 bg-transparent text-white font-semibold border border-white rounded hover:bg-red-600 hover:text-white hover:border-white transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 heapSort">Heap
+                                            Sort</button>
+                                    </div>
+                                    <div>
+                                        <button type="button"
+                                            class="disabled:opacity-75 py-2 px-4 w-40 bg-transparent text-white font-semibold border border-white rounded hover:bg-red-600 hover:text-white hover:border-white transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 shellSort">Shell
+                                            Sort</button>
+                                    </div>
+
+                                    <div>
+                                        <button type="button"
+                                            class="disabled:opacity-75 py-2 px-4 w-40 bg-transparent text-white font-semibold border border-white rounded hover:bg-red-600 hover:text-white hover:border-white transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 radixSort">Radix
+                                            Sort</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col space-y-2">
+                                <div class="text-center text-lg text-white">Size</div>
+                                <div class="mx-auto">
+                                    <span id="size">
+                                        <input id="size_input" type="range" value=50 min="1" max="77"
+                                            class="appearance-none w-full h-0.5 bg-grey rounded outline-none slider-thumb w-48">
+                                    </span>
+                                </div>
+                                <div class="text-center text-lg text-white">Speed</div>
+                                <div class="mx-auto rounded-full mb-2">
+                                    <span id="speed" class="pb-0">
+                                        <input id="speed_input" type="range" min="20" max="315" value=60
+                                            class="appearance-none w-full h-0.5 bg-grey rounded outline-none slider-thumb w-48">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col space-y-2">
+                                <div class="mx-auto">
+                                    <button type="button"
+                                        class="disabled:opacity-75 py-2 px-4 w-40 bg-transparent text-white font-semibold border border-white rounded hover:bg-red-600 hover:text-white hover:border-white transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 new">New
+                                        Array</button>
+                                </div>
+                                <div class="mx-auto">
+                                    <button type="button"
+                                        class="disabled:opacity-75 py-2 px-4 w-40 bg-transparent text-white font-semibold border border-white rounded hover:bg-red-600 hover:text-white hover:border-red transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 stop"" disabled="
+                                        true">Stop Sorting</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Description"
+            class="description h-screen bg-gray-900 hidden text-white font-mono text-center w-full py-5">
+            <div class='w-4/5 bg-indigo-900 mx-auto px-5 h-full rounded-lg'>
+                <div id="description_heading" class="text-4xl pt-3 text-center"></div>
+                <h4 class="timeComplexity text-left pb-4 text-3xl">Time Complexity: <span id="timeComplexity"></span>
+                </h4>
+                <div class="h-5/6 bg-indigo-800 overflow-y-scroll rounded-lg p-3">
+                    <div class="detailsbox text-xl">
+                        <p id="description_details" class="pt-3 h-full text-left"></p>
+                    </div>
+                    <h4 class="pseudocodeStatic text-left text-2xl">Pseudocode:</h4><br>
+                    <pre id="pseudocode" class="pseudocodeClass text-lg text-left pb-2">
+        </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="sorting.js" async defer></script>
+    <script src="algorithms.js" async defer></script>
+</body>
+
+</html>
